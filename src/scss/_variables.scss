@@ -1,0 +1,64 @@
+//background
+$green:rgb(64, 169, 49);
+// grid variables
+$grid-columns: 12;
+$grid-max-width: 65em;
+// Base color
+$color-green: #42b549;
+$color-green-secondary: #f0fcf1;
+$color-orange: #ff5722;
+$color-blue: #46d5e0;
+$color-yellow: #ffb200;
+$color-yellow-2: #ffc107;
+$color-tint: #fafdcd;
+$color-grey: #efefef;
+$color-dark-grey: #979797;
+$color-red: #e94f4f;
+$color-red-light: #ea212d;
+$color-red-error: #d50000;
+$color-green-soft: #cde4c3;
+$color-yellow-soft: #ecdb77;
+$color-border-grey: #e0e0e0;
+$color-border-green: #cde4c3;
+$color-orange-soft: #ff974f;
+$color-dark-green: #008000;
+$color-dark-red: #b94a48;
+$color-white-hex-1: #fafafa;
+$color-white-hex-2: #f1f1f1;
+$color-white-hex-3: #f3fef3;
+$color-white-hex-4: #f8f8f8;
+
+// Unify color
+$color-black-primary: rgba(0, 0, 0, 0.7);
+$color-black-secondary: rgba(0, 0, 0, 0.54);
+$color-black-disabled: rgba(0, 0, 0, 0.38);
+$color-black-disabled2: rgba(0, 0, 0, 0.42);
+$color-placeholder: rgba(0, 0, 0, 0.26);
+
+$color-white-primary: rgba(255, 255, 255, 1);
+$color-white-secondary: rgba(255, 255, 255, 0.7);
+$color-white-disabled: rgba(255, 255, 255, 0.5);
+
+$color-grey-0: rgba(0, 0, 0, 0.025);
+$color-grey-1: rgba(0, 0, 0, 0.05);
+$color-grey-2: rgba(0, 0, 0, 0.1);
+$color-grey-3: rgba(0, 0, 0, 0.2);
+$color-grey-4: rgba(248, 248, 248, 1);
+$color-grey-5: rgba(241, 241, 241, 1);
+
+// Overlay Color
+$color-overlay: rgba(0, 0, 0, 0.25);
+$color-overlay-2: rgba(0, 0, 0, 0.75);
+
+// Border color
+$color-border-dark: rgba(0, 0, 0, 0.12);
+
+// Box shadow color
+$box-shadow-normal: 1px 1px 2px 0 rgba(0, 0, 0, 0.1);
+
+$color-grey-disabled: rgba(0, 0, 0, 0.12);
+$color-grey-disabled-2: rgba(0, 0, 0, 0.26);
+$color-grey-disabled-3: rgba(0, 0, 0, 0.38);
+// breakpoints
+$breakpoint-small: "only screen and (min-width: 20em)";
+$breakpoint-medium: "only screen and (min-width: 48em)";

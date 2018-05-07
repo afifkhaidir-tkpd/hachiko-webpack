@@ -1,0 +1,304 @@
+body{
+    background: #f5f5f5;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin: 0 auto -80px;
+}
+
+//Hero
+.header{
+    padding:50px 0;
+    position: relative;
+    z-index: 10;
+}
+.hero{
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#20b444+0,197427+100 */
+background: rgb(32,180,68); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, rgba(32,180,68,1) 0%, rgba(25,116,39,1) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(32,180,68,1) 0%,rgba(25,116,39,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, rgba(32,180,68,1) 0%,rgba(25,116,39,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#20b444', endColorstr='#197427',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    min-height: 100vh;
+
+}
+.hero-top{
+    background: url(https://tokopedia-upload.s3.amazonaws.com/tokopoints/teaserbgtop.png)no-repeat;
+    height: 400px;
+    background-size: 100%;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+}
+.hero-bottom{
+    background: url(https://tokopedia-upload.s3.amazonaws.com/tokopoints/teaserbgbottom.png)no-repeat;
+    height: 400px;
+    background-size: 100%;
+    background-position: bottom;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+}
+//teaser
+.teaser-content {
+    position: relative;
+    z-index: 100;
+    color: #FFF;
+
+    &-sharing {
+        margin-top: 30px;
+    }
+    
+    h2{
+        // font-size: 4.3rem;
+        width: 50%;
+        line-height: 1.75;
+        font-weight: 700;
+        color: #fff;
+        letter-spacing: -1.1px;
+    }
+
+    h3 {
+        line-height: 1.5;
+        color: #fff;
+        margin-top: 20px;
+    }
+
+    .jssocials-share-logo {
+        width: 1em;
+        vertical-align: middle;
+        font-size: 1.8em !important;
+    }
+
+    .box{
+        position: absolute;
+        left: 50%;
+        top: 20%;
+    }
+    
+    .question{
+        position: absolute;
+        left: 40%;
+        top: 30%;
+    }
+}
+.countdown{
+    margin-top: 50px;
+}
+#share,.share-label{
+float: left;
+}
+.share-label{
+    line-height: 50px;
+    padding:0 20px 0 0;
+    font-size: 16px;
+    color: #fff;
+}
+//footer
+.footer {
+    padding: 20px 15px;
+    background: #fff;
+    box-shadow: 0 -1px 1px rgba(0,0,0,.05);
+    margin-top: 0;
+    position: relative;
+    z-index: 6;
+}
+.footer-copyright {
+    color: rgba(0,0,0,.58);
+    margin-top: 10px;
+}
+.footer-connect {
+    padding: 5px;
+}
+.footer-connect>ul {
+    margin: 0;
+    padding: 0 10px;
+    display: inline-block;
+}
+.footer-connect>ul>li {
+    list-style: none;
+    display: inline-block;
+}
+.footer-connect__apps, .footer-connect__socmed {
+    height: 30px;
+}
+.footer-connect__apps, .footer-connect__socmed {
+    height: 30px;
+}
+@media screen and (max-width:1600px){
+    .teaser-content h2{
+        font-size: 25px;
+        line-height: 30px;
+        width: 100%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    // .hero-top{
+    //     height: 100px;
+    //    background-position: bottom center;
+    // }
+    // .hero-bottom{
+    //     height: 220px;
+    // }
+}
+@media screen and (max-width:1200px){
+    .teaser-content h2{
+        font-size: 25px;
+        line-height: 30px;
+        width: 100%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    // .hero-top{
+    //     height: 100px;
+    //    background-position: bottom center;
+    // }
+    // .hero-bottom{
+    //     height: 220px;
+    // }
+}
+@media screen and (max-width:1024px){
+    .teaser-content h2{
+        font-size: 25px;
+        line-height: 30px;
+        width: 100%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .logo{
+        text-align: center;
+    }
+    // .hero-top{
+    //     height: 100px;
+    //    background-position: bottom center;
+
+    // }
+    // .hero-bottom{
+    //     height: 220px;
+    // }
+}
+@media screen and (max-width:990px){
+    .teaser-content {
+        h2 {
+            font-size: 25px;
+            line-height: 30px;
+            width: 100%;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        h3 {
+            font-size: 18px;
+        }
+    }
+    .logo{
+        text-align: center;
+    }
+    // .hero-top{
+    //     height: 100px;
+
+    // }
+    // .hero-bottom{
+    //     height: 220px;
+    // }
+    .box{
+        display: none;
+    }
+    .countdown{
+        margin-top: 30px;
+    }
+    .jssocials{
+        margin-bottom: 30px;
+    }
+    .footer{
+        // position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .footer-copyright {
+        color: rgba(0, 0, 0, 0.58);
+        margin-top: 10px;
+        text-align: center;
+        float: none !important;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .footer-connect{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    .footer-connect > ul {
+        margin-bottom: 10px;
+    }
+    .teaser-content .jssocials-share-logo {
+        width: 1em;
+        vertical-align: middle;
+        font-size: 1.2em !important;
+    }
+}
+@media screen and (max-width:520px){
+    .teaser-content h2{
+        font-size: 25px;
+        line-height: 30px;
+        width: 100%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .logo{
+        text-align: center;
+    }
+    // .hero-top{
+    //     height: 50px;
+    // }
+    // .hero-bottom{
+    //     height: 200px;
+    // }
+    .box{
+        display: none;
+    }
+    .countdown{
+        margin-top: 30px;
+    }
+    .jssocials{
+        margin-bottom: 30px;
+    }
+    .teaser-content .jssocials-share-logo {
+        width: 1em;
+        vertical-align: middle;
+        font-size: 0.7em !important;
+    }
+    .teaser-content h4 {
+        color: #fff;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .footer-copyright {
+        color: rgba(0, 0, 0, 0.58);
+        margin-top: 10px;
+        text-align: center;
+        float: none !important;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .footer-connect{
+        float: none;
+        text-align: center;
+    }
+    .footer-connect > ul {
+        margin-bottom: 10px;
+    }
+}

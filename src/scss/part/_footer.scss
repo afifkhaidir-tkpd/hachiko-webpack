@@ -1,0 +1,67 @@
+/* ==========
+ * Footer
+ * ========== */
+ .footer {
+    padding: 20px 15px;
+    background-color: #FFF;
+    box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  .footer-copyright {
+    padding: 10px;
+    @include breakpoint(smd) {
+        float: none !important;
+        text-align: center;
+    }
+  }
+  
+  .footer-connect {
+    padding: 5px;
+    @include breakpoint(smd) {
+        float: none !important;
+        text-align: center;
+    }
+  }
+  
+  .footer-connect > ul {
+    margin: 0;
+    padding: 0 10px;
+    display: inline-block;
+    height: 30px;
+    @include breakpoint(smd) {
+        display: block;
+        margin: auto;
+    }
+  }
+  
+  .footer-connect > ul:first-child {
+    border-right: 1px solid #CDCDCD;
+    @include breakpoint(smd) {
+        margin-bottom: 10px;
+        border-right: none;
+    }
+  }
+  
+  .footer-connect > ul > li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 6px;
+    @include breakpoint(smd) {
+        padding: 0 2px;
+    }
+  }
+  
+  .footer-connect__apps {
+    height: 30px;
+    @include breakpoint(smd) {
+        height: 27px;
+    }
+  }
+  
+  .footer-connect__socmed {
+    height: 30px;
+    @include breakpoint(smd) {
+        height: 27px;
+    }
+  }
+  

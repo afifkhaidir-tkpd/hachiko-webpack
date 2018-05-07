@@ -1,0 +1,55 @@
+*,
+*:after,
+*:before {
+	margin: 0;
+	padding: 0;
+	@include border-box;
+}
+
+img {
+	width: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.wrapper,
+.row {
+	@extend %clearfix;
+}
+
+.pull-left {
+	float: left !important;
+}
+
+.pull-right {
+	float: right !important;
+}
+
+[class*='col-'] {
+	float: left;
+	padding: 1em;
+	width: 100%;
+	min-height: 1px;
+}
+
+.col-auto {
+	margin: 0 auto !important;
+	float: none;
+}
+
+@media #{$breakpoint-medium} {
+	.wrapper {
+		width: 90%;
+		max-width: $grid-max-width;
+	}
+	@for $i from 1 through $grid-columns {
+		.col-#{$i} {
+			width: 100% / $grid-columns * $i;
+	 	}
+	}
+}
