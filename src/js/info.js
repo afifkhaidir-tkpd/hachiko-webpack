@@ -1,3 +1,5 @@
+import '../scss/info.scss';
+
 (function($) {
   $(document).ready(function() {
     /* ===================
