@@ -237,6 +237,11 @@
     }
   }
 
+  &__p {
+    line-height: 1.5;
+    color: $color-black-secondary;
+  }
+
   &__h3 {
     color: $color-black-primary;
     font-size: 1.6rem;

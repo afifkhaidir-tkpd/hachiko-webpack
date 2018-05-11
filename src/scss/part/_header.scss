@@ -48,6 +48,11 @@
   .logo{
     float: left;
     margin-top: 8px;
+
+    @include breakpoint(xs) {
+      float: none;
+      text-align: center;
+    }
   
     & img {
       height: 25px;
