@@ -230,6 +230,16 @@
           }
         }
 
+        & a {
+          text-decoration: none;
+          color: #42B549;
+          transition: .2s;
+
+          &:hover {
+            color: #008000;
+          }
+        }
+
         & .img-info {
           max-width: 250px;
         }
