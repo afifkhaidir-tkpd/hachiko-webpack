@@ -6,6 +6,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const S3Plugin = require('webpack-s3-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
 module.exports = {
@@ -18,7 +19,7 @@ module.exports = {
   output: {
     filename: '[name]/[name].min.js',
     path: path.resolve(__dirname, 'dist'),
-    // publicPath: devMode ? '' : 'https://ecs7.tokopedia.net/assets-tokopoints/prod/js',
+    publicPath: devMode ? '' : 'https://ecs7.tokopedia.net/assets-tokopoints/prod/microsite',
   },
   devServer: {
     contentBase: './dist'
@@ -60,8 +61,8 @@ module.exports = {
       jQuery: 'jquery'
     }),
     new MiniCssExtractPlugin({
-      filename: devMode ? "[name].css" : "[name].[hash].css",
-      chunkFilename: devMode ? "[id].css" : "[name].[hash].css"
+      filename: devMode ? "[name]/[name].css" : "[name]/[name].[hash].css",
+      chunkFilename: devMode ? "[name]/[id].css" : "[name]/[name].[hash].css"
     }),
     new HtmlWebpackPlugin({
       inject: true,
@@ -96,4 +97,21 @@ module.exports = {
       }
     }
   }
+}
+
+if(!devMode) {
+  module.exports.plugins.push(
+    new S3Plugin({
+      include: /.*\.(css|js)/,
+      s3Options: {
+        accessKeyId: 'AKIAID2CRE5FDLQ3VJXQ',
+        secretAccessKey: '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',
+        region: 'ap-southeast-1'
+      },
+      s3UploadOptions: {
+        Bucket: 'tokopedia-upload'
+      },
+      basePath: 'assets-tokopoints/prod/microsite'
+    })
+  )
 }

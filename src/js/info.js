@@ -14,7 +14,7 @@ import '../scss/info.scss';
       
       pivotEnterTimeout = setTimeout(function() {
         pivot.addClass('active');
-        overlay.show();
+        overlay.addClass('active');
       }, pivotDelay);
     }, function() {
       var pivot = $(this).parent();
@@ -22,7 +22,7 @@ import '../scss/info.scss';
       
       pivotLeaveTimeout = setTimeout(function() {
         pivot.removeClass('active');
-        overlay.hide();
+        overlay.removeClass('active');
       }, pivotDelay);
     });
     
