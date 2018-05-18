@@ -104,8 +104,8 @@ if(!devMode) {
     new S3Plugin({
       include: /.*\.(css|js)/,
       s3Options: {
-        accessKeyId: 'AKIAID2CRE5FDLQ3VJXQ',
-        secretAccessKey: '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',
+        accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+        secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
         region: 'ap-southeast-1'
       },
       s3UploadOptions: {

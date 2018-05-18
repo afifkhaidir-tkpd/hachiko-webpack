@@ -2,6 +2,22 @@ import '../scss/info.scss';
 
 (function($) {
   $(document).ready(function() {
+    /* ===========================
+     * Toggle expanded menu mobile
+     * ============================ */
+    $('.header-hamburger').on('click', function() {
+      $(this).siblings('.header-overlay').addClass('active');
+      $(this).siblings('.top-navigation-menu').addClass('expanded');
+      $('body').addClass('fixed');
+    });
+
+    $('.top-navigation-menu__close, .header-overlay, .top-navigation-menu__link').on('click', function() {
+      $('.header-overlay').removeClass('active');
+      $('.top-navigation-menu').removeClass('expanded');
+      $('body').removeClass('fixed');
+    });
+
+
     /* ===================
       * Pivot animation
       * =================== */
